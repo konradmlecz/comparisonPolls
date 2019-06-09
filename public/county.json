@@ -1,0 +1,1538 @@
+[
+  {
+    "teryt": "",
+    "county": ""
+  },
+  {
+    "teryt": "0201",
+    "county": "bolesławiecki"
+  },
+  {
+    "teryt": "0202",
+    "county": "dzierżoniowski"
+  },
+  {
+    "teryt": "0203",
+    "county": "głogowski"
+  },
+  {
+    "teryt": "0204",
+    "county": "górowski"
+  },
+  {
+    "teryt": "0205",
+    "county": "jaworski"
+  },
+  {
+    "teryt": "0206",
+    "county": "jeleniogórski"
+  },
+  {
+    "teryt": "0207",
+    "county": "kamiennogórski"
+  },
+  {
+    "teryt": "0208",
+    "county": "kłodzki"
+  },
+  {
+    "teryt": "0209",
+    "county": "legnicki"
+  },
+  {
+    "teryt": "0210",
+    "county": "lubański"
+  },
+  {
+    "teryt": "0211",
+    "county": "lubiński"
+  },
+  {
+    "teryt": "0212",
+    "county": "lwówecki"
+  },
+  {
+    "teryt": "0213",
+    "county": "milicki"
+  },
+  {
+    "teryt": "0214",
+    "county": "oleśnicki"
+  },
+  {
+    "teryt": "0215",
+    "county": "oławski"
+  },
+  {
+    "teryt": "0216",
+    "county": "polkowicki"
+  },
+  {
+    "teryt": "0217",
+    "county": "strzeliński"
+  },
+  {
+    "teryt": "0218",
+    "county": "średzki"
+  },
+  {
+    "teryt": "0219",
+    "county": "świdnicki"
+  },
+  {
+    "teryt": "0220",
+    "county": "trzebnicki"
+  },
+  {
+    "teryt": "0221",
+    "county": "wałbrzyski"
+  },
+  {
+    "teryt": "0222",
+    "county": "wołowski"
+  },
+  {
+    "teryt": "0223",
+    "county": "wrocławski"
+  },
+  {
+    "teryt": "0224",
+    "county": "ząbkowicki"
+  },
+  {
+    "teryt": "0225",
+    "county": "zgorzelecki"
+  },
+  {
+    "teryt": "0226",
+    "county": "złotoryjski"
+  },
+  {
+    "teryt": "0261",
+    "county": "Jelenia Góra"
+  },
+  {
+    "teryt": "0262",
+    "county": "Legnica"
+  },
+  {
+    "teryt": "0264",
+    "county": "Wrocław"
+  },
+  {
+    "teryt": "0265",
+    "county": "Wałbrzych"
+  },
+  {
+    "teryt": "0401",
+    "county": "aleksandrowski"
+  },
+  {
+    "teryt": "0402",
+    "county": "brodnicki"
+  },
+  {
+    "teryt": "0403",
+    "county": "bydgoski"
+  },
+  {
+    "teryt": "0404",
+    "county": "chełmiński"
+  },
+  {
+    "teryt": "0405",
+    "county": "golubsko-dobrzyński"
+  },
+  {
+    "teryt": "0406",
+    "county": "grudziądzki"
+  },
+  {
+    "teryt": "0407",
+    "county": "inowrocławski"
+  },
+  {
+    "teryt": "0408",
+    "county": "lipnowski"
+  },
+  {
+    "teryt": "0409",
+    "county": "mogileński"
+  },
+  {
+    "teryt": "0410",
+    "county": "nakielski"
+  },
+  {
+    "teryt": "0411",
+    "county": "radziejowski"
+  },
+  {
+    "teryt": "0412",
+    "county": "rypiński"
+  },
+  {
+    "teryt": "0413",
+    "county": "sępoleński"
+  },
+  {
+    "teryt": "0414",
+    "county": "świecki"
+  },
+  {
+    "teryt": "0415",
+    "county": "toruński"
+  },
+  {
+    "teryt": "0416",
+    "county": "tucholski"
+  },
+  {
+    "teryt": "0417",
+    "county": "wąbrzeski"
+  },
+  {
+    "teryt": "0418",
+    "county": "włocławski"
+  },
+  {
+    "teryt": "0419",
+    "county": "żniński"
+  },
+  {
+    "teryt": "0461",
+    "county": "Bydgoszcz"
+  },
+  {
+    "teryt": "0462",
+    "county": "Grudziądz"
+  },
+  {
+    "teryt": "0463",
+    "county": "Toruń"
+  },
+  {
+    "teryt": "0464",
+    "county": "Włocławek"
+  },
+  {
+    "teryt": "0601",
+    "county": "bialski"
+  },
+  {
+    "teryt": "0602",
+    "county": "biłgorajski"
+  },
+  {
+    "teryt": "0603",
+    "county": "chełmski"
+  },
+  {
+    "teryt": "0604",
+    "county": "hrubieszowski"
+  },
+  {
+    "teryt": "0605",
+    "county": "janowski"
+  },
+  {
+    "teryt": "0606",
+    "county": "krasnostawski"
+  },
+  {
+    "teryt": "0607",
+    "county": "kraśnicki"
+  },
+  {
+    "teryt": "0608",
+    "county": "lubartowski"
+  },
+  {
+    "teryt": "0609",
+    "county": "lubelski"
+  },
+  {
+    "teryt": "0610",
+    "county": "łęczyński"
+  },
+  {
+    "teryt": "0611",
+    "county": "łukowski"
+  },
+  {
+    "teryt": "0612",
+    "county": "opolski"
+  },
+  {
+    "teryt": "0613",
+    "county": "parczewski"
+  },
+  {
+    "teryt": "0614",
+    "county": "puławski"
+  },
+  {
+    "teryt": "0615",
+    "county": "radzyński"
+  },
+  {
+    "teryt": "0616",
+    "county": "rycki"
+  },
+  {
+    "teryt": "0617",
+    "county": "świdnicki"
+  },
+  {
+    "teryt": "0618",
+    "county": "tomaszowski"
+  },
+  {
+    "teryt": "0619",
+    "county": "włodawski"
+  },
+  {
+    "teryt": "0620",
+    "county": "zamojski"
+  },
+  {
+    "teryt": "0661",
+    "county": "Biała Podlaska"
+  },
+  {
+    "teryt": "0662",
+    "county": "Chełm"
+  },
+  {
+    "teryt": "0663",
+    "county": "Lublin"
+  },
+  {
+    "teryt": "0664",
+    "county": "Zamość"
+  },
+  {
+    "teryt": "0801",
+    "county": "gorzowski"
+  },
+  {
+    "teryt": "0802",
+    "county": "krośnieński"
+  },
+  {
+    "teryt": "0803",
+    "county": "międzyrzecki"
+  },
+  {
+    "teryt": "0804",
+    "county": "nowosolski"
+  },
+  {
+    "teryt": "0805",
+    "county": "słubicki"
+  },
+  {
+    "teryt": "0806",
+    "county": "strzelecko-drezdenecki"
+  },
+  {
+    "teryt": "0807",
+    "county": "sulęciński"
+  },
+  {
+    "teryt": "0808",
+    "county": "świebodziński"
+  },
+  {
+    "teryt": "0809",
+    "county": "zielonogórski"
+  },
+  {
+    "teryt": "0810",
+    "county": "żagański"
+  },
+  {
+    "teryt": "0811",
+    "county": "żarski"
+  },
+  {
+    "teryt": "0812",
+    "county": "wschowski"
+  },
+  {
+    "teryt": "0861",
+    "county": "Gorzów Wielkopolski"
+  },
+  {
+    "teryt": "0862",
+    "county": "Zielona Góra"
+  },
+  {
+    "teryt": "1001",
+    "county": "bełchatowski"
+  },
+  {
+    "teryt": "1002",
+    "county": "kutnowski"
+  },
+  {
+    "teryt": "1003",
+    "county": "łaski"
+  },
+  {
+    "teryt": "1004",
+    "county": "łęczycki"
+  },
+  {
+    "teryt": "1005",
+    "county": "łowicki"
+  },
+  {
+    "teryt": "1006",
+    "county": "łódzki wschodni"
+  },
+  {
+    "teryt": "1007",
+    "county": "opoczyński"
+  },
+  {
+    "teryt": "1008",
+    "county": "pabianicki"
+  },
+  {
+    "teryt": "1009",
+    "county": "pajęczański"
+  },
+  {
+    "teryt": "1010",
+    "county": "piotrkowski"
+  },
+  {
+    "teryt": "1011",
+    "county": "poddębicki"
+  },
+  {
+    "teryt": "1012",
+    "county": "radomszczański"
+  },
+  {
+    "teryt": "1013",
+    "county": "rawski"
+  },
+  {
+    "teryt": "1014",
+    "county": "sieradzki"
+  },
+  {
+    "teryt": "1015",
+    "county": "skierniewicki"
+  },
+  {
+    "teryt": "1016",
+    "county": "tomaszowski"
+  },
+  {
+    "teryt": "1017",
+    "county": "wieluński"
+  },
+  {
+    "teryt": "1018",
+    "county": "wieruszowski"
+  },
+  {
+    "teryt": "1019",
+    "county": "zduńskowolski"
+  },
+  {
+    "teryt": "1020",
+    "county": "zgierski"
+  },
+  {
+    "teryt": "1021",
+    "county": "brzeziński"
+  },
+  {
+    "teryt": "1061",
+    "county": "Łódź"
+  },
+  {
+    "teryt": "1062",
+    "county": "Piotrków Trybunalski"
+  },
+  {
+    "teryt": "1063",
+    "county": "Skierniewice"
+  },
+  {
+    "teryt": "1201",
+    "county": "bocheński"
+  },
+  {
+    "teryt": "1202",
+    "county": "brzeski"
+  },
+  {
+    "teryt": "1203",
+    "county": "chrzanowski"
+  },
+  {
+    "teryt": "1204",
+    "county": "dąbrowski"
+  },
+  {
+    "teryt": "1205",
+    "county": "gorlicki"
+  },
+  {
+    "teryt": "1206",
+    "county": "krakowski"
+  },
+  {
+    "teryt": "1207",
+    "county": "limanowski"
+  },
+  {
+    "teryt": "1208",
+    "county": "miechowski"
+  },
+  {
+    "teryt": "1209",
+    "county": "myślenicki"
+  },
+  {
+    "teryt": "1210",
+    "county": "nowosądecki"
+  },
+  {
+    "teryt": "1211",
+    "county": "nowotarski"
+  },
+  {
+    "teryt": "1212",
+    "county": "olkuski"
+  },
+  {
+    "teryt": "1213",
+    "county": "oświęcimski"
+  },
+  {
+    "teryt": "1214",
+    "county": "proszowicki"
+  },
+  {
+    "teryt": "1215",
+    "county": "suski"
+  },
+  {
+    "teryt": "1216",
+    "county": "tarnowski"
+  },
+  {
+    "teryt": "1217",
+    "county": "tatrzański"
+  },
+  {
+    "teryt": "1218",
+    "county": "wadowicki"
+  },
+  {
+    "teryt": "1219",
+    "county": "wielicki"
+  },
+  {
+    "teryt": "1261",
+    "county": "Kraków"
+  },
+  {
+    "teryt": "1262",
+    "county": "Nowy Sącz"
+  },
+  {
+    "teryt": "1263",
+    "county": "Tarnów"
+  },
+  {
+    "teryt": "1401",
+    "county": "białobrzeski"
+  },
+  {
+    "teryt": "1402",
+    "county": "ciechanowski"
+  },
+  {
+    "teryt": "1403",
+    "county": "garwoliński"
+  },
+  {
+    "teryt": "1404",
+    "county": "gostyniński"
+  },
+  {
+    "teryt": "1405",
+    "county": "grodziski"
+  },
+  {
+    "teryt": "1406",
+    "county": "grójecki"
+  },
+  {
+    "teryt": "1407",
+    "county": "kozienicki"
+  },
+  {
+    "teryt": "1408",
+    "county": "legionowski"
+  },
+  {
+    "teryt": "1409",
+    "county": "lipski"
+  },
+  {
+    "teryt": "1410",
+    "county": "łosicki"
+  },
+  {
+    "teryt": "1411",
+    "county": "makowski"
+  },
+  {
+    "teryt": "1412",
+    "county": "miński"
+  },
+  {
+    "teryt": "1413",
+    "county": "mławski"
+  },
+  {
+    "teryt": "1414",
+    "county": "nowodworski"
+  },
+  {
+    "teryt": "1415",
+    "county": "ostrołęcki"
+  },
+  {
+    "teryt": "1416",
+    "county": "ostrowski"
+  },
+  {
+    "teryt": "1417",
+    "county": "otwocki"
+  },
+  {
+    "teryt": "1418",
+    "county": "piaseczyński"
+  },
+  {
+    "teryt": "1419",
+    "county": "płocki"
+  },
+  {
+    "teryt": "1420",
+    "county": "płoński"
+  },
+  {
+    "teryt": "1421",
+    "county": "pruszkowski"
+  },
+  {
+    "teryt": "1422",
+    "county": "przasnyski"
+  },
+  {
+    "teryt": "1423",
+    "county": "przysuski"
+  },
+  {
+    "teryt": "1424",
+    "county": "pułtuski"
+  },
+  {
+    "teryt": "1425",
+    "county": "radomski"
+  },
+  {
+    "teryt": "1426",
+    "county": "siedlecki"
+  },
+  {
+    "teryt": "1427",
+    "county": "sierpecki"
+  },
+  {
+    "teryt": "1428",
+    "county": "sochaczewski"
+  },
+  {
+    "teryt": "1429",
+    "county": "sokołowski"
+  },
+  {
+    "teryt": "1430",
+    "county": "szydłowiecki"
+  },
+  {
+    "teryt": "1432",
+    "county": "warszawski zachodni"
+  },
+  {
+    "teryt": "1433",
+    "county": "węgrowski"
+  },
+  {
+    "teryt": "1434",
+    "county": "wołomiński"
+  },
+  {
+    "teryt": "1435",
+    "county": "wyszkowski"
+  },
+  {
+    "teryt": "1436",
+    "county": "zwoleński"
+  },
+  {
+    "teryt": "1437",
+    "county": "żuromiński"
+  },
+  {
+    "teryt": "1438",
+    "county": "żyrardowski"
+  },
+  {
+    "teryt": "1461",
+    "county": "Ostrołęka"
+  },
+  {
+    "teryt": "1462",
+    "county": "Płock"
+  },
+  {
+    "teryt": "1463",
+    "county": "Radom"
+  },
+  {
+    "teryt": "1464",
+    "county": "Siedlce"
+  },
+  {
+    "teryt": "1465",
+    "county": "Warszawa"
+  },
+  {
+    "teryt": "1499",
+    "county": "Zagranica"
+  },
+  {
+    "teryt": "1601",
+    "county": "brzeski"
+  },
+  {
+    "teryt": "1602",
+    "county": "głubczycki"
+  },
+  {
+    "teryt": "1603",
+    "county": "kędzierzyńsko-kozielski"
+  },
+  {
+    "teryt": "1604",
+    "county": "kluczborski"
+  },
+  {
+    "teryt": "1605",
+    "county": "krapkowicki"
+  },
+  {
+    "teryt": "1606",
+    "county": "namysłowski"
+  },
+  {
+    "teryt": "1607",
+    "county": "nyski"
+  },
+  {
+    "teryt": "1608",
+    "county": "oleski"
+  },
+  {
+    "teryt": "1609",
+    "county": "opolski"
+  },
+  {
+    "teryt": "1610",
+    "county": "prudnicki"
+  },
+  {
+    "teryt": "1611",
+    "county": "strzelecki"
+  },
+  {
+    "teryt": "1661",
+    "county": "Opole"
+  },
+  {
+    "teryt": "1801",
+    "county": "bieszczadzki"
+  },
+  {
+    "teryt": "1802",
+    "county": "brzozowski"
+  },
+  {
+    "teryt": "1803",
+    "county": "dębicki"
+  },
+  {
+    "teryt": "1804",
+    "county": "jarosławski"
+  },
+  {
+    "teryt": "1805",
+    "county": "jasielski"
+  },
+  {
+    "teryt": "1806",
+    "county": "kolbuszowski"
+  },
+  {
+    "teryt": "1807",
+    "county": "krośnieński"
+  },
+  {
+    "teryt": "1808",
+    "county": "leżajski"
+  },
+  {
+    "teryt": "1809",
+    "county": "lubaczowski"
+  },
+  {
+    "teryt": "1810",
+    "county": "łańcucki"
+  },
+  {
+    "teryt": "1811",
+    "county": "mielecki"
+  },
+  {
+    "teryt": "1812",
+    "county": "niżański"
+  },
+  {
+    "teryt": "1813",
+    "county": "przemyski"
+  },
+  {
+    "teryt": "1814",
+    "county": "przeworski"
+  },
+  {
+    "teryt": "1815",
+    "county": "ropczycko-sędziszowski"
+  },
+  {
+    "teryt": "1816",
+    "county": "rzeszowski"
+  },
+  {
+    "teryt": "1817",
+    "county": "sanocki"
+  },
+  {
+    "teryt": "1818",
+    "county": "stalowowolski"
+  },
+  {
+    "teryt": "1819",
+    "county": "strzyżowski"
+  },
+  {
+    "teryt": "1820",
+    "county": "tarnobrzeski"
+  },
+  {
+    "teryt": "1821",
+    "county": "leski"
+  },
+  {
+    "teryt": "1861",
+    "county": "Krosno"
+  },
+  {
+    "teryt": "1862",
+    "county": "Przemyśl"
+  },
+  {
+    "teryt": "1863",
+    "county": "Rzeszów"
+  },
+  {
+    "teryt": "1864",
+    "county": "Tarnobrzeg"
+  },
+  {
+    "teryt": "2001",
+    "county": "augustowski"
+  },
+  {
+    "teryt": "2002",
+    "county": "białostocki"
+  },
+  {
+    "teryt": "2003",
+    "county": "bielski"
+  },
+  {
+    "teryt": "2004",
+    "county": "grajewski"
+  },
+  {
+    "teryt": "2005",
+    "county": "hajnowski"
+  },
+  {
+    "teryt": "2006",
+    "county": "kolneński"
+  },
+  {
+    "teryt": "2007",
+    "county": "łomżyński"
+  },
+  {
+    "teryt": "2008",
+    "county": "moniecki"
+  },
+  {
+    "teryt": "2009",
+    "county": "sejneński"
+  },
+  {
+    "teryt": "2010",
+    "county": "siemiatycki"
+  },
+  {
+    "teryt": "2011",
+    "county": "sokólski"
+  },
+  {
+    "teryt": "2012",
+    "county": "suwalski"
+  },
+  {
+    "teryt": "2013",
+    "county": "wysokomazowiecki"
+  },
+  {
+    "teryt": "2014",
+    "county": "zambrowski"
+  },
+  {
+    "teryt": "2061",
+    "county": "Białystok"
+  },
+  {
+    "teryt": "2062",
+    "county": "Łomża"
+  },
+  {
+    "teryt": "2063",
+    "county": "Suwałki"
+  },
+  {
+    "teryt": "2201",
+    "county": "bytowski"
+  },
+  {
+    "teryt": "2202",
+    "county": "chojnicki"
+  },
+  {
+    "teryt": "2203",
+    "county": "człuchowski"
+  },
+  {
+    "teryt": "2204",
+    "county": "gdański"
+  },
+  {
+    "teryt": "2205",
+    "county": "kartuski"
+  },
+  {
+    "teryt": "2206",
+    "county": "kościerski"
+  },
+  {
+    "teryt": "2207",
+    "county": "kwidzyński"
+  },
+  {
+    "teryt": "2208",
+    "county": "lęborski"
+  },
+  {
+    "teryt": "2209",
+    "county": "malborski"
+  },
+  {
+    "teryt": "2210",
+    "county": "nowodworski"
+  },
+  {
+    "teryt": "2211",
+    "county": "pucki"
+  },
+  {
+    "teryt": "2212",
+    "county": "słupski"
+  },
+  {
+    "teryt": "2213",
+    "county": "starogardzki"
+  },
+  {
+    "teryt": "2214",
+    "county": "tczewski"
+  },
+  {
+    "teryt": "2215",
+    "county": "wejherowski"
+  },
+  {
+    "teryt": "2216",
+    "county": "sztumski"
+  },
+  {
+    "teryt": "2261",
+    "county": "Gdańsk"
+  },
+  {
+    "teryt": "2262",
+    "county": "Gdynia"
+  },
+  {
+    "teryt": "2263",
+    "county": "Słupsk"
+  },
+  {
+    "teryt": "2264",
+    "county": "Sopot"
+  },
+  {
+    "teryt": "2298",
+    "county": "Statki (Gdynia)"
+  },
+  {
+    "teryt": "2299",
+    "county": "Statki (Gdańsk)"
+  },
+  {
+    "teryt": "2401",
+    "county": "będziński"
+  },
+  {
+    "teryt": "2402",
+    "county": "bielski"
+  },
+  {
+    "teryt": "2403",
+    "county": "cieszyński"
+  },
+  {
+    "teryt": "2404",
+    "county": "częstochowski"
+  },
+  {
+    "teryt": "2405",
+    "county": "gliwicki"
+  },
+  {
+    "teryt": "2406",
+    "county": "kłobucki"
+  },
+  {
+    "teryt": "2407",
+    "county": "lubliniecki"
+  },
+  {
+    "teryt": "2408",
+    "county": "mikołowski"
+  },
+  {
+    "teryt": "2409",
+    "county": "myszkowski"
+  },
+  {
+    "teryt": "2410",
+    "county": "pszczyński"
+  },
+  {
+    "teryt": "2411",
+    "county": "raciborski"
+  },
+  {
+    "teryt": "2412",
+    "county": "rybnicki"
+  },
+  {
+    "teryt": "2413",
+    "county": "tarnogórski"
+  },
+  {
+    "teryt": "2414",
+    "county": "bieruńsko-lędziński"
+  },
+  {
+    "teryt": "2415",
+    "county": "wodzisławski"
+  },
+  {
+    "teryt": "2416",
+    "county": "zawierciański"
+  },
+  {
+    "teryt": "2417",
+    "county": "żywiecki"
+  },
+  {
+    "teryt": "2461",
+    "county": "Bielsko-Biała"
+  },
+  {
+    "teryt": "2462",
+    "county": "Bytom"
+  },
+  {
+    "teryt": "2463",
+    "county": "Chorzów"
+  },
+  {
+    "teryt": "2464",
+    "county": "Częstochowa"
+  },
+  {
+    "teryt": "2465",
+    "county": "Dąbrowa Górnicza"
+  },
+  {
+    "teryt": "2466",
+    "county": "Gliwice"
+  },
+  {
+    "teryt": "2467",
+    "county": "Jastrzębie-Zdrój"
+  },
+  {
+    "teryt": "2468",
+    "county": "Jaworzno"
+  },
+  {
+    "teryt": "2469",
+    "county": "Katowice"
+  },
+  {
+    "teryt": "2470",
+    "county": "Mysłowice"
+  },
+  {
+    "teryt": "2471",
+    "county": "Piekary Śląskie"
+  },
+  {
+    "teryt": "2472",
+    "county": "Ruda Śląska"
+  },
+  {
+    "teryt": "2473",
+    "county": "Rybnik"
+  },
+  {
+    "teryt": "2474",
+    "county": "Siemianowice Śląskie"
+  },
+  {
+    "teryt": "2475",
+    "county": "Sosnowiec"
+  },
+  {
+    "teryt": "2476",
+    "county": "Świętochłowice"
+  },
+  {
+    "teryt": "2477",
+    "county": "Tychy"
+  },
+  {
+    "teryt": "2478",
+    "county": "Zabrze"
+  },
+  {
+    "teryt": "2479",
+    "county": "Żory"
+  },
+  {
+    "teryt": "2601",
+    "county": "buski"
+  },
+  {
+    "teryt": "2602",
+    "county": "jędrzejowski"
+  },
+  {
+    "teryt": "2603",
+    "county": "kazimierski"
+  },
+  {
+    "teryt": "2604",
+    "county": "kielecki"
+  },
+  {
+    "teryt": "2605",
+    "county": "konecki"
+  },
+  {
+    "teryt": "2606",
+    "county": "opatowski"
+  },
+  {
+    "teryt": "2607",
+    "county": "ostrowiecki"
+  },
+  {
+    "teryt": "2608",
+    "county": "pińczowski"
+  },
+  {
+    "teryt": "2609",
+    "county": "sandomierski"
+  },
+  {
+    "teryt": "2610",
+    "county": "skarżyski"
+  },
+  {
+    "teryt": "2611",
+    "county": "starachowicki"
+  },
+  {
+    "teryt": "2612",
+    "county": "staszowski"
+  },
+  {
+    "teryt": "2613",
+    "county": "włoszczowski"
+  },
+  {
+    "teryt": "2661",
+    "county": "Kielce"
+  },
+  {
+    "teryt": "2801",
+    "county": "bartoszycki"
+  },
+  {
+    "teryt": "2802",
+    "county": "braniewski"
+  },
+  {
+    "teryt": "2803",
+    "county": "działdowski"
+  },
+  {
+    "teryt": "2804",
+    "county": "elbląski"
+  },
+  {
+    "teryt": "2805",
+    "county": "ełcki"
+  },
+  {
+    "teryt": "2806",
+    "county": "giżycki"
+  },
+  {
+    "teryt": "2807",
+    "county": "iławski"
+  },
+  {
+    "teryt": "2808",
+    "county": "kętrzyński"
+  },
+  {
+    "teryt": "2809",
+    "county": "lidzbarski"
+  },
+  {
+    "teryt": "2810",
+    "county": "mrągowski"
+  },
+  {
+    "teryt": "2811",
+    "county": "nidzicki"
+  },
+  {
+    "teryt": "2812",
+    "county": "nowomiejski"
+  },
+  {
+    "teryt": "2813",
+    "county": "olecki"
+  },
+  {
+    "teryt": "2814",
+    "county": "olsztyński"
+  },
+  {
+    "teryt": "2815",
+    "county": "ostródzki"
+  },
+  {
+    "teryt": "2816",
+    "county": "piski"
+  },
+  {
+    "teryt": "2817",
+    "county": "szczycieński"
+  },
+  {
+    "teryt": "2818",
+    "county": "gołdapski"
+  },
+  {
+    "teryt": "2819",
+    "county": "węgorzewski"
+  },
+  {
+    "teryt": "2861",
+    "county": "Elbląg"
+  },
+  {
+    "teryt": "2862",
+    "county": "Olsztyn"
+  },
+  {
+    "teryt": "3001",
+    "county": "chodzieski"
+  },
+  {
+    "teryt": "3002",
+    "county": "czarnkowsko-trzcianecki"
+  },
+  {
+    "teryt": "3003",
+    "county": "gnieźnieński"
+  },
+  {
+    "teryt": "3004",
+    "county": "gostyński"
+  },
+  {
+    "teryt": "3005",
+    "county": "grodziski"
+  },
+  {
+    "teryt": "3006",
+    "county": "jarociński"
+  },
+  {
+    "teryt": "3007",
+    "county": "kaliski"
+  },
+  {
+    "teryt": "3008",
+    "county": "kępiński"
+  },
+  {
+    "teryt": "3009",
+    "county": "kolski"
+  },
+  {
+    "teryt": "3010",
+    "county": "koniński"
+  },
+  {
+    "teryt": "3011",
+    "county": "kościański"
+  },
+  {
+    "teryt": "3012",
+    "county": "krotoszyński"
+  },
+  {
+    "teryt": "3013",
+    "county": "leszczyński"
+  },
+  {
+    "teryt": "3014",
+    "county": "międzychodzki"
+  },
+  {
+    "teryt": "3015",
+    "county": "nowotomyski"
+  },
+  {
+    "teryt": "3016",
+    "county": "obornicki"
+  },
+  {
+    "teryt": "3017",
+    "county": "ostrowski"
+  },
+  {
+    "teryt": "3018",
+    "county": "ostrzeszowski"
+  },
+  {
+    "teryt": "3019",
+    "county": "pilski"
+  },
+  {
+    "teryt": "3020",
+    "county": "pleszewski"
+  },
+  {
+    "teryt": "3021",
+    "county": "poznański"
+  },
+  {
+    "teryt": "3022",
+    "county": "rawicki"
+  },
+  {
+    "teryt": "3023",
+    "county": "słupecki"
+  },
+  {
+    "teryt": "3024",
+    "county": "szamotulski"
+  },
+  {
+    "teryt": "3025",
+    "county": "średzki"
+  },
+  {
+    "teryt": "3026",
+    "county": "śremski"
+  },
+  {
+    "teryt": "3027",
+    "county": "turecki"
+  },
+  {
+    "teryt": "3028",
+    "county": "wągrowiecki"
+  },
+  {
+    "teryt": "3029",
+    "county": "wolsztyński"
+  },
+  {
+    "teryt": "3030",
+    "county": "wrzesiński"
+  },
+  {
+    "teryt": "3031",
+    "county": "złotowski"
+  },
+  {
+    "teryt": "3061",
+    "county": "Kalisz"
+  },
+  {
+    "teryt": "3062",
+    "county": "Konin"
+  },
+  {
+    "teryt": "3063",
+    "county": "Leszno"
+  },
+  {
+    "teryt": "3064",
+    "county": "Poznań"
+  },
+  {
+    "teryt": "3201",
+    "county": "białogardzki"
+  },
+  {
+    "teryt": "3202",
+    "county": "choszczeński"
+  },
+  {
+    "teryt": "3203",
+    "county": "drawski"
+  },
+  {
+    "teryt": "3204",
+    "county": "goleniowski"
+  },
+  {
+    "teryt": "3205",
+    "county": "gryficki"
+  },
+  {
+    "teryt": "3206",
+    "county": "gryfiński"
+  },
+  {
+    "teryt": "3207",
+    "county": "kamieński"
+  },
+  {
+    "teryt": "3208",
+    "county": "kołobrzeski"
+  },
+  {
+    "teryt": "3209",
+    "county": "koszaliński"
+  },
+  {
+    "teryt": "3210",
+    "county": "myśliborski"
+  },
+  {
+    "teryt": "3211",
+    "county": "policki"
+  },
+  {
+    "teryt": "3212",
+    "county": "pyrzycki"
+  },
+  {
+    "teryt": "3213",
+    "county": "sławieński"
+  },
+  {
+    "teryt": "3214",
+    "county": "stargardzki"
+  },
+  {
+    "teryt": "3215",
+    "county": "szczecinecki"
+  },
+  {
+    "teryt": "3216",
+    "county": "świdwiński"
+  },
+  {
+    "teryt": "3217",
+    "county": "wałecki"
+  },
+  {
+    "teryt": "3218",
+    "county": "łobeski"
+  },
+  {
+    "teryt": "3261",
+    "county": "Koszalin"
+  },
+  {
+    "teryt": "3262",
+    "county": "Szczecin"
+  },
+  {
+    "teryt": "3263",
+    "county": "Świnoujście"
+  }
+]

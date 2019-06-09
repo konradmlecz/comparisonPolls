@@ -4,7 +4,15 @@ import StatChoice from "./StatChoice";
 function Stat() {
   const [statDisplayed, setStatDisplayed] = useState(false);
 
-  return <>{statDisplayed ? <StatDisplay /> : <StatChoice />}</>;
+  return (
+    <>
+      {statDisplayed ? (
+        <StatDisplay />
+      ) : (
+        <StatChoice setStatDisplayed={() => setStatDisplayed(true)} />
+      )}
+    </>
+  );
 }
 
 export default Stat;
