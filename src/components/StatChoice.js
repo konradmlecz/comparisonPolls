@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Button from "./Button";
-import axios from "axios";
 import Dropdownlist from "./Dropdownlist";
+import axios from "axios";
 
 function StatChoice(props) {
   const [districts, setDistricts] = useState([]);
   const [countys, setCountys] = useState([]);
   const [voivodeships, setVoivodeships] = useState([]);
-  const [selectedDistricts, setsSelectedDistricts] = useState(null);
-  const [selectedCountys, setsSelectedCountys] = useState(null);
-  const [selectedVoivodeships, setsSelectedVoivodeships] = useState(null);
 
   useEffect(() => {
     axios.get("district.json").then(response => setDistricts(response.data));
@@ -19,29 +16,10 @@ function StatChoice(props) {
       .then(response => setVoivodeships(response.data));
   }, []);
 
-  const setEntity = (value, enitity) => {
-    switch (enitity) {
-      case 0:
-        setsSelectedVoivodeships(value);
-        setsSelectedCountys(null);
-        setsSelectedDistricts(null);
-        break;
-      case 1:
-        setsSelectedCountys(value);
-        setsSelectedDistricts(null);
-        break;
-      case 2:
-        setsSelectedDistricts(value);
-        break;
-
-      default:
-        break;
-    }
-  };
   return (
     <>
       <div>StatChoice</div>
-      <Dropdownlist onChange={e => setEntity(e.target.value, 0)}>
+      <Dropdownlist onChange={e => props.setEntity(e.target.value, 0)}>
         {voivodeships.map(op => {
           return (
             <option key={op.teryt} value={op.teryt}>
@@ -51,10 +29,13 @@ function StatChoice(props) {
           );
         })}
       </Dropdownlist>{" "}
-      <Dropdownlist onChange={e => setEntity(e.target.value, 1)}>
-        {!Number(selectedVoivodeships) ||
+      <Dropdownlist onChange={e => props.setEntity(e.target.value, 1)}>
+        {!Number(props.selectedVoivodeships) ||
           countys.map(op => {
-            if (selectedVoivodeships === op.teryt.slice(0, 2) || !op.teryt) {
+            if (
+              props.selectedVoivodeships === op.teryt.slice(0, 2) ||
+              !op.teryt
+            ) {
               console.log("object");
               return (
                 <option key={op.teryt} value={op.teryt}>
@@ -65,12 +46,12 @@ function StatChoice(props) {
             }
           })}
       </Dropdownlist>{" "}
-      <Dropdownlist onChange={e => setEntity(e.target.value, 2)}>
-        {!Number(selectedCountys) ||
+      <Dropdownlist onChange={e => props.setEntity(e.target.value, 2)}>
+        {!Number(props.selectedCountys) ||
           districts.map(op => {
             if (
-              (selectedCountys === op.teryt.slice(0, 4) &&
-                selectedVoivodeships === op.teryt.slice(0, 2)) ||
+              (props.selectedCountys === op.teryt.slice(0, 4) &&
+                props.selectedVoivodeships === op.teryt.slice(0, 2)) ||
               !op.teryt
             ) {
               console.log("object");
