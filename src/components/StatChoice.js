@@ -16,6 +16,16 @@ function StatChoice(props) {
       .then(response => setVoivodeships(response.data));
   }, []);
 
+  const displeydCounties = countys.filter(
+    op => props.selectedVoivodeships === op.teryt.slice(0, 2) || !op.teryt
+  );
+  const displeydDistrict = districts.filter(
+    op =>
+      (props.selectedCountys === op.teryt.slice(0, 4) &&
+        props.selectedVoivodeships === op.teryt.slice(0, 2)) ||
+      !op.teryt
+  );
+
   return (
     <>
       <div>StatChoice</div>
@@ -31,38 +41,21 @@ function StatChoice(props) {
       </Dropdownlist>{" "}
       <Dropdownlist onChange={e => props.setEntity(e.target.value, 1)}>
         {!Number(props.selectedVoivodeships) ||
-          countys.map(op => {
-            if (
-              props.selectedVoivodeships === op.teryt.slice(0, 2) ||
-              !op.teryt
-            ) {
-              console.log("object");
-              return (
-                <option key={op.teryt} value={op.teryt}>
-                  {" "}
-                  {op.county}
-                </option>
-              );
-            }
-          })}
+          displeydCounties.map(op => (
+            <option key={op.teryt} value={op.teryt}>
+              {" "}
+              {op.county}
+            </option>
+          ))}
       </Dropdownlist>{" "}
       <Dropdownlist onChange={e => props.setEntity(e.target.value, 2)}>
         {!Number(props.selectedCountys) ||
-          districts.map(op => {
-            if (
-              (props.selectedCountys === op.teryt.slice(0, 4) &&
-                props.selectedVoivodeships === op.teryt.slice(0, 2)) ||
-              !op.teryt
-            ) {
-              console.log("object");
-              return (
-                <option key={op.teryt} value={op.teryt}>
-                  {" "}
-                  {op.district}
-                </option>
-              );
-            }
-          })}
+          displeydDistrict.map(op => (
+            <option key={op.teryt} value={op.teryt}>
+              {" "}
+              {op.district}
+            </option>
+          ))}
       </Dropdownlist>{" "}
       <Button onClick={props.setStatDisplayed}>Szukaj</Button>
     </>
