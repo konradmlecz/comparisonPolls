@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import StatDisplay from "./StatDisplay";
 import StatChoice from "./StatChoice";
+import Nav from "./Nav";
 
 function Stat() {
   const [statDisplayed, setStatDisplayed] = useState(false);
@@ -31,6 +32,7 @@ function Stat() {
 
   return (
     <>
+      <Nav />
       {statDisplayed ? (
         <StatDisplay
           selectedDistricts={selectedDistricts}
