@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.css";
-import Stat from "./components/Stat";
+import StatChoice from "./components/StatChoice";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import StatMain from "./components/StatMain";
 import StatContact from "./components/StatContact";
+import StatDisplay from "./components/StatDisplay";
 import Error from "./components/Error";
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <div className="App">
         <Switch>
           <Route path="/" exact component={StatMain} />
-          <Route path="/stat" exact component={Stat} />
+          <Route path="/choice" exact component={StatChoice} />
+          <Route path="/display/:woj/:pow?/:gm?" component={StatDisplay} />
           <Route path="/contact" exact component={StatContact} />
           <Route component={Error} />
         </Switch>

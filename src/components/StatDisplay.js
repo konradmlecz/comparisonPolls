@@ -1,44 +1,35 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import Nav from "./Nav";
 import { Chart } from "react-google-charts";
 
 function StatDisplay(props) {
   const [chart, setChart] = useState([]);
+  const { woj, pow, gm } = props.match.params;
+  const [data, setData] = useState(null);
 
-  const changeData = obj => {
-    const keys = Object.keys(obj);
-    const values = Object.values(obj);
-    const values2 = [];
-    values.forEach(value => {
-      let value2 = value.replace(",", ".");
-      values2.push(Number(value2));
-    });
-
-    const newObj = {};
-    newObj.keys = keys;
-    newObj.values = values2;
-    console.log(newObj);
-    return obj;
+  const fetchData = () => {
+    fetch(`http://localhost:5000/${woj}/${pow}/${gm}`)
+      .then(response => {
+        console.log(response);
+        if (response.ok) return response;
+      })
+      .then(response => response.json())
+      .then(myJson => setData(myJson))
+      .catch(error => alert(error));
   };
 
-  const data = [
-    ["Element", "Density", { role: "style" }],
-    [Object.getOwnPropertyNames(chart)[4], Number(chart.PIS), "#b87333"], // RGB value
-    ["Silver", 10.49, "silver"], // English color name
-    ["Gold", 19.3, "gold"],
-    ["Platinum", 21.45, "color: #e5e4e2"] // CSS-style declaration
-  ];
-
   useEffect(() => {
-    axios
-      .get("fakedata.json")
-      .then(response => setChart(changeData(response.data[0])));
+    fetchData();
+    console.log(woj);
   }, []);
 
   return (
     <>
-      {console.log(chart)}
-      <Chart chartType="ColumnChart" width="80%" height="200px" data={data} />
+      <Nav />
+      {<p>{"to ja"}</p>}
+      {console.log(data)}
+      {/* <Chart chartType="ColumnChart" width="80%" height="200px" data={data} /> */}
+      {/* <p>{props.dataToDisplay ? props.dataToDisplay.name : null}</p> */}
     </>
   );
 }

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Button from "./stylecomponents/Button";
 import Dropdownlist from "./stylecomponents/Dropdownlist";
 import axios from "axios";
+import Nav from "./Nav";
+import { Link } from "react-router-dom";
 import Container from "./stylecomponents/Container";
 import Paragraf from "./stylecomponents/Paragraf";
 
@@ -9,6 +11,30 @@ function StatChoice(props) {
   const [districts, setDistricts] = useState([]);
   const [countys, setCountys] = useState([]);
   const [voivodeships, setVoivodeships] = useState([]);
+
+  const [selectedDistricts, setsSelectedDistricts] = useState("gm");
+  const [selectedCountys, setsSelectedCountys] = useState("pow");
+  const [selectedVoivodeships, setsSelectedVoivodeships] = useState("woj");
+
+  const setEntity = (value, enitity) => {
+    switch (enitity) {
+      case 0:
+        setsSelectedVoivodeships(value);
+        setsSelectedCountys("pow");
+        setsSelectedDistricts("gm");
+        break;
+      case 1:
+        setsSelectedCountys(value);
+        setsSelectedDistricts("gm");
+        break;
+      case 2:
+        setsSelectedDistricts(value);
+        break;
+
+      default:
+        break;
+    }
+  };
 
   useEffect(() => {
     axios.get("district.json").then(response => setDistricts(response.data));
@@ -19,17 +45,18 @@ function StatChoice(props) {
   }, []);
 
   const displeydCounties = countys.filter(
-    op => props.selectedVoivodeships === op.teryt.slice(0, 2) || !op.teryt
+    op => selectedVoivodeships === op.teryt.slice(0, 2) || !op.teryt
   );
   const displeydDistrict = districts.filter(
     op =>
-      (props.selectedCountys === op.teryt.slice(0, 4) &&
-        props.selectedVoivodeships === op.teryt.slice(0, 2)) ||
+      (selectedCountys === op.teryt.slice(0, 4) &&
+        selectedVoivodeships === op.teryt.slice(0, 2)) ||
       !op.teryt
   );
 
   return (
     <>
+      <Nav />
       <Container paddingtop={"20px"}>
         <Paragraf>
           {" "}
@@ -43,7 +70,7 @@ function StatChoice(props) {
       <Container paddingtop={"10px"}>
         <Dropdownlist
           defaultValue="woj"
-          onChange={e => props.setEntity(e.target.value, 0)}
+          onChange={e => setEntity(e.target.value, 0)}
         >
           {voivodeships.map((op, i) => {
             if (i === 0) {
@@ -63,9 +90,9 @@ function StatChoice(props) {
         </Dropdownlist>{" "}
         <Dropdownlist
           defaultValue="pow"
-          onChange={e => props.setEntity(e.target.value, 1)}
+          onChange={e => setEntity(e.target.value, 1)}
         >
-          {!Number(props.selectedVoivodeships) ||
+          {!Number(selectedVoivodeships) ||
             displeydCounties.map((op, i) => {
               if (i === 0) {
                 return (
@@ -84,9 +111,9 @@ function StatChoice(props) {
         </Dropdownlist>{" "}
         <Dropdownlist
           defaultValue="gm"
-          onChange={e => props.setEntity(e.target.value, 2)}
+          onChange={e => setEntity(e.target.value, 2)}
         >
-          {!Number(props.selectedCountys) ||
+          {!Number(selectedCountys) ||
             displeydDistrict.map((op, i) => {
               if (i === 0) {
                 return (
@@ -103,7 +130,12 @@ function StatChoice(props) {
                 );
             })}
         </Dropdownlist>{" "}
-        <Button onClick={props.setStatDisplayed}>Szukaj</Button>
+        <Link
+          to={`/display/${selectedVoivodeships}/${selectedCountys}/${selectedDistricts}`}
+        >
+          {" "}
+          <Button>Szukaj</Button>
+        </Link>
       </Container>
     </>
   );

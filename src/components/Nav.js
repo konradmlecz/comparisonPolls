@@ -10,7 +10,7 @@ export default function Nav(params) {
         <NavLink to="/" exact>
           <NavItem>Home</NavItem>
         </NavLink>
-        <NavLink to="/stat">
+        <NavLink to="/choice">
           <NavItem>Statystyki</NavItem>
         </NavLink>
         <NavLink to="/contact">
