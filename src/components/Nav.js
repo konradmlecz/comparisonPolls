@@ -1,17 +1,24 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 import NavItem from "./stylecomponents/NavItem";
 import NavContainer from "./stylecomponents/NavContainer";
 
-export default function Nav(params) {
+export default withRouter(function Nav(props) {
+  console.log(props.location.pathname);
   return (
     <>
       <NavContainer>
         <NavLink to="/" exact>
-          <NavItem>Home</NavItem>
+          <NavItem>Start</NavItem>
         </NavLink>
         <NavLink to="/choice">
-          <NavItem>Statystyki</NavItem>
+          <NavItem
+            border={"thick double"}
+            backgroudcolor={props.location.pathname === "/" ? "#d90404" : null}
+            color={props.location.pathname === "/" ? "white" : null}
+          >
+            Porównaj {/* */}
+          </NavItem>
         </NavLink>
         <NavLink to="/contact">
           <NavItem>Kontakt</NavItem>
@@ -19,4 +26,4 @@ export default function Nav(params) {
       </NavContainer>
     </>
   );
-}
+});
