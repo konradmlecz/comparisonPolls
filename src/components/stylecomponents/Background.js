@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import img from "./../../images/ballot-box-32384.svg";
+import img from "./../../images/protest.jpg";
 const Background = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: fixed;
-  z-index: -1;
-  left: 0;
-  top: 15%;
+  z-index: -3;
+  opacity: 0.6;
+  left: 0%;
+  top: 0%;
   width: 100%;
-  height: 80vh;
-  margin: 2px;
+  height: 100vh;
 `;
 export default Background;
