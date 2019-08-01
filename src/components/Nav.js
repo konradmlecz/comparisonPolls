@@ -11,7 +11,7 @@ export default withRouter(function Nav(props) {
         bgc={props.location.pathname === "/" || "var(--color-complementary)"}
       >
         <NavContainerRestrictive>
-          <NavLink to="/" exact>
+          <NavLink to="/" exact style={{ textDecoration: "none" }}>
             <NavItem
               color={
                 props.location.pathname === "/" ? null : "var(--color-white)"
@@ -20,7 +20,10 @@ export default withRouter(function Nav(props) {
               Start
             </NavItem>
           </NavLink>
-          <NavLink to={{ pathname: "/choice" }}>
+          <NavLink
+            to={{ pathname: "/choice" }}
+            style={{ textDecoration: "none" }}
+          >
             <NavItem
               border={"thin double"}
               backgroudcolor={
@@ -33,7 +36,7 @@ export default withRouter(function Nav(props) {
               Porównywarka {/* */}
             </NavItem>
           </NavLink>
-          <NavLink to="/contact">
+          <NavLink to="/contact" style={{ textDecoration: "none" }}>
             <NavItem
               color={
                 props.location.pathname === "/" ? null : "var(--color-white)"

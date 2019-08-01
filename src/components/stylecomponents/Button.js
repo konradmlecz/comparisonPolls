@@ -18,5 +18,8 @@ const Button = styled.button`
   :disabled:hover {
     box-shadow: none;
   }
+  @media (max-width: 650px) {
+    margin: 10px 0;
+  }
 `;
 export default Button;

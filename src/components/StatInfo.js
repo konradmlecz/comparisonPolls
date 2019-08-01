@@ -32,17 +32,17 @@ export default function StatContact(params) {
           </List>
           <Paragraf align={"justify"}>
             {" "}
-            Źródło danych:{" "}
-            <Link href="https://pkw.gov.pl/">https://pkw.gov.pl/</Link>{" "}
+            Uwaga!!! Przy porównywaniu danych, należy mieć na względzie że
+            partie oraz ugrupowania politycznie startowały w różnych
+            konfiguracjach z różnych komitetów wyborczych w ramach
+            poszczególnych wyborów. W przypadku wyborów samorządowych
+            uwzględnione są tylko wyniki do sejmików województw. Dane, ze
+            wszystkich wyborów, obrazują tylko komitety startujące ogólnopolsko.
           </Paragraf>
           <Paragraf align={"justify"}>
             {" "}
-            Uwaga! Przy porównywaniu danych, należy mieć na względzie że partie
-            oraz ugrupowania politycznie startowały w różnych konfiguracjach z
-            różnych komitetów wyborczych w ramach poszczególnych wyborów. W
-            przypadku wyborów samorządowych uwzględnione są tylko wyniki do
-            sejmików województw. Dane, ze wszystkich wyborów, obrazują tylko
-            komitety startujące ogólnopolsko.
+            Źródło danych:{" "}
+            <Link href="https://pkw.gov.pl/">https://pkw.gov.pl/</Link>{" "}
           </Paragraf>
         </ContainerRestrictive>
       </Section>

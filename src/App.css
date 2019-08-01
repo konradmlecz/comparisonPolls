@@ -7,10 +7,17 @@
 
 .magnifying-glass {
   color: #b52a2a;
+  font-size: 10rem;
   padding-left: 30px;
   transition: 0.5s;
   cursor: pointer;
 }
 .magnifying-glass:hover {
   transform: scale(1.3);
+}
+
+@media (max-width: 730px) {
+  .magnifying-glass {
+    font-size: 8rem;
+  }
 }

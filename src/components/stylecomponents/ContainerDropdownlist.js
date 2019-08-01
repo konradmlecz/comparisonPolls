@@ -2,14 +2,12 @@ import styled from "styled-components";
 
 const ContainerRestrictive = styled.div`
   display: flex;
-  flex-direction: ${props => props.direction};
   justify-content: center;
-  align-items: center;
-  width: 80%;
-  max-width: 1200px;
-  @media (max-width: 730px) {
+  align-items: "center";
+  width: 100%;
+  @media (max-width: 650px) {
     flex-direction: column;
-    width: 90%;
+    align-items: center;
   }
 `;
 export default ContainerRestrictive;

@@ -15,7 +15,14 @@ const Header = styled.h1`
   color: var(--color-white);
   animation: ${anim} 1s ease-out;
   font-family: var(--font-default);
-  font-size: ${props => props.fs};
+  font-size: 4rem;
   width: 100%;
+
+  @media (max-width: 730px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 530px) {
+    font-size: 1.8rem;
+  }
 `;
 export default Header;

@@ -7,6 +7,10 @@ const Section = styled.div`
   justify-content: center;
   align-items: "center";
   width: 100%;
+  @media (max-width: 815px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 `;
 
 export default Section;

@@ -9,6 +9,7 @@ import BackgroundImage from "./stylecomponents/BackgroundImage";
 import Section from "./stylecomponents/Section";
 import ContainerSectionAbsolute from "./stylecomponents/ContainerSectionAbsolute";
 import ContainerHeader from "./stylecomponents/ContainerHeader";
+import Container30 from "./stylecomponents/Container30";
 import Paragraf from "./stylecomponents/Paragraf";
 import BannerText from "./stylecomponents/BannerText";
 import Image from "./stylecomponents/Image";
@@ -25,7 +26,7 @@ export default function StatStart(props) {
       <Nav />
       <ContainerHeader bgc={"var(--color-complementary)"}>
         <ContainerRestrictive>
-          <Header fs={"4rem"}>Porównywarka wyborów</Header>
+          <Header>Porównywarka wyborów</Header>
         </ContainerRestrictive>
       </ContainerHeader>
       <ContainerSectionAbsolute>
@@ -40,6 +41,7 @@ export default function StatStart(props) {
                 Władza korumpuje, a władza absolutna korumpuje absolutnie - John
                 Acton
               </Cite>
+
               <Cite>
                 Bez społeczeństwa obywatelskiego nie ma demokracji - Ernest
                 Gellner
@@ -50,14 +52,12 @@ export default function StatStart(props) {
         <Section bgc={"var(--color-white)"}>
           <ContainerRestrictive>
             <BannerText>Sprawdź wyniki wyborów w swojej gminie!</BannerText>
-            <BannerArrow>>>></BannerArrow>
-            <NavLink to="/choice">
-              <FontAwesomeIcon
-                icon={faSearch}
-                size={"10x"}
-                className="magnifying-glass"
-              />
-            </NavLink>
+            <Container30>
+              <BannerArrow>>>></BannerArrow>
+              <NavLink to="/choice">
+                <FontAwesomeIcon icon={faSearch} className="magnifying-glass" />
+              </NavLink>
+            </Container30>
           </ContainerRestrictive>
         </Section>
         <Footer bgc={"var(--color-complementary)"}>

@@ -18,6 +18,11 @@ const Select = styled.select`
     min-height: 20px;
     padding: 0px 2px 1px;
   }
+  @media (max-width: 650px) {
+    width: 200px;
+    margin: 5px 0;
+    padding: 5px;
+  }
 `;
 
 export default Select;

@@ -3,16 +3,18 @@ const NavItem = styled.p`
   font-family: var(--font-default);
   background-color: ${props => props.backgroudcolor || "none"};
   color: ${props => props.color || "black"};
-  display: inline-block;
-  margin: 1% 2%;
+  display: block;
+  margin: 10px 20px;
   padding: 0 5px;
   border: ${props => props.border || "none"};
   font-size: 1.6rem;
   line-height: 200%;
   font-weight: 500;
+  text-decoration: none;
   text-transform: uppercase;
-  :hover {
-    /* color: #262626; */
+  @media (max-width: 450px) {
+    font-size: 1.4rem;
+    margin: 5px 5px;
   }
 `;
 

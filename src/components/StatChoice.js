@@ -11,6 +11,7 @@ import Image from "./stylecomponents/Image";
 import Section from "./stylecomponents/Section";
 import ContainerDevideToHalf from "./stylecomponents/ContainerDevideToHalf";
 import ContainerRestrictive from "./stylecomponents/ContainerRestrictive";
+import ContainerDropdownlist from "./stylecomponents/ContainerDropdownlist";
 import Footer from "./stylecomponents/Footer";
 
 function StatChoice(props) {
@@ -88,63 +89,65 @@ function StatChoice(props) {
     <>
       <Nav />
       <Section bgc={"var(--color-light)"}>
-        <Dropdownlist defaultValue="woj" onChange={e => setEntity(e, 0)}>
-          {voivodeships.map((op, i) => {
-            if (i === 0) {
-              return (
-                <option key="woj" value="woj" hidden>
-                  województwo
-                </option>
-              );
-            } else
-              return (
-                <option key={op.teryt} value={op.teryt}>
-                  {" "}
-                  {op.voivodeship}
-                </option>
-              );
-          })}
-        </Dropdownlist>{" "}
-        <Dropdownlist defaultValue="pow" onChange={e => setEntity(e, 1)}>
-          {!Number(units.selectedVoivodeships.teryt) ||
-            displeydCounties.map((op, i) => {
+        <ContainerDropdownlist>
+          <Dropdownlist defaultValue="woj" onChange={e => setEntity(e, 0)}>
+            {voivodeships.map((op, i) => {
               if (i === 0) {
                 return (
-                  <option key="pow" value="pow" hidden>
-                    powiat
+                  <option key="woj" value="woj" hidden>
+                    województwo
                   </option>
                 );
               } else
                 return (
                   <option key={op.teryt} value={op.teryt}>
                     {" "}
-                    {op.county}
+                    {op.voivodeship}
                   </option>
                 );
             })}
-        </Dropdownlist>{" "}
-        <Dropdownlist defaultValue="gm" onChange={e => setEntity(e, 2)}>
-          {!Number(units.selectedCountys.teryt) ||
-            displeydDistrict.map((op, i) => {
-              if (i === 0) {
-                return (
-                  <option key="gm" value="gm" hidden>
-                    gmina
-                  </option>
-                );
-              } else
-                return (
-                  <option key={op.teryt} value={op.teryt}>
-                    {" "}
-                    {op.district}
-                  </option>
-                );
-            })}
-        </Dropdownlist>{" "}
-        <Link to={`/display/${selectedTeryt}`}>
-          {" "}
-          <Button disabled={buttonDisable}>Szukaj</Button>
-        </Link>
+          </Dropdownlist>{" "}
+          <Dropdownlist defaultValue="pow" onChange={e => setEntity(e, 1)}>
+            {!Number(units.selectedVoivodeships.teryt) ||
+              displeydCounties.map((op, i) => {
+                if (i === 0) {
+                  return (
+                    <option key="pow" value="pow" hidden>
+                      powiat
+                    </option>
+                  );
+                } else
+                  return (
+                    <option key={op.teryt} value={op.teryt}>
+                      {" "}
+                      {op.county}
+                    </option>
+                  );
+              })}
+          </Dropdownlist>{" "}
+          <Dropdownlist defaultValue="gm" onChange={e => setEntity(e, 2)}>
+            {!Number(units.selectedCountys.teryt) ||
+              displeydDistrict.map((op, i) => {
+                if (i === 0) {
+                  return (
+                    <option key="gm" value="gm" hidden>
+                      gmina
+                    </option>
+                  );
+                } else
+                  return (
+                    <option key={op.teryt} value={op.teryt}>
+                      {" "}
+                      {op.district}
+                    </option>
+                  );
+              })}
+          </Dropdownlist>{" "}
+          <Link to={`/display/${selectedTeryt}`}>
+            {" "}
+            <Button disabled={buttonDisable}>Szukaj</Button>
+          </Link>
+        </ContainerDropdownlist>
       </Section>
       <Section bgc={"var(--color-white)"}>
         <ContainerRestrictive>

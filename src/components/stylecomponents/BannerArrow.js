@@ -25,5 +25,9 @@ const BannerArrow = styled.p`
   animation: ${anim} 2s linear infinite;
   font-family: var(--font-default);
   font-size: 6rem;
+  line-height: 200%;
+  @media (max-width: 730px) {
+    font-size: 4.5rem;
+  }
 `;
 export default BannerArrow;
