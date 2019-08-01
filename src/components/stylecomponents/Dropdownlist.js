@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 const Select = styled.select`
+  font-family: var(--font-default);
   display: block;
   width: 150px;
-  height: 35px;
-  background: white;
-  color: gray;
+  background: var(--color-white);
+  color: var(--color-black);
   padding-left: 5px;
-  font-size: 14px;
-  border: 1px solid #d90404;
+  font-size: 1.4rem;
+  border: 1px solid var(--color-complementary);
   margin: 0 5px;
   option {
     color: black;

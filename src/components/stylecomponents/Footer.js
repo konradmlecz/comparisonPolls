@@ -1,11 +1,13 @@
 import styled from "styled-components";
-const Container = styled.div`
+const Footer = styled.div`
+  background-color: ${props => props.bgc};
   display: flex;
   flex-wrap: wrap;
-  padding-top: ${props => props.paddingtop};
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
 `;
 
-export default Container;
+export default Footer;

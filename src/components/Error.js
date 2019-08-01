@@ -1,15 +1,15 @@
 import React from "react";
 import Nav from "./Nav";
-import Container from "./stylecomponents/Container";
+import Section from "./stylecomponents/Section";
 import Paragraf from "./stylecomponents/Paragraf";
 
 export default function StatMain() {
   return (
     <>
       <Nav />
-      <Container paddingtop={"20px"}>
+      <Section>
         <Paragraf>Nie Ma takiej strony</Paragraf>
-      </Container>
+      </Section>
     </>
   );
 }

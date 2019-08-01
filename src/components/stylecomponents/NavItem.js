@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const NavItem = styled.p`
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-default);
   background-color: ${props => props.backgroudcolor || "none"};
   color: ${props => props.color || "black"};
   display: inline-block;
@@ -12,7 +12,7 @@ const NavItem = styled.p`
   font-weight: 500;
   text-transform: uppercase;
   :hover {
-    color: #262626;
+    /* color: #262626; */
   }
 `;
 

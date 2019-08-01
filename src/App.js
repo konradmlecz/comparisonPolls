@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 import StatChoice from "./components/StatChoice";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import StatMain from "./components/StatMain";
-import StatContact from "./components/StatContact";
+import StatStart from "./components/StatStart";
+import StatInfo from "./components/StatInfo";
 import StatDisplay from "./components/StatDisplay";
 import Error from "./components/Error";
 
@@ -12,10 +12,10 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Switch>
-          <Route path="/" exact component={StatMain} />
+          <Route path="/" exact component={StatStart} />
           <Route path="/choice" exact component={StatChoice} />
-          <Route path="/display/:woj/:pow?/:gm?" component={StatDisplay} />
-          <Route path="/contact" exact component={StatContact} />
+          <Route path="/display/:teryt" component={StatDisplay} />
+          <Route path="/contact" exact component={StatInfo} />
           <Route component={Error} />
         </Switch>
       </div>
