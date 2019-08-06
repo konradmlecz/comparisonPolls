@@ -11,7 +11,7 @@ export default function StatContact(params) {
   return (
     <>
       <Nav />
-      <Section bgc={"var(--color-light)"}>
+      <Section mh="90vh" bgc={"var(--color-light)"}>
         <ContainerRestrictive direction={"column"}>
           <Paragraf align={"justify"}>
             {" "}

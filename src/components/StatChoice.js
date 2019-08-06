@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import axios from "axios";
+
 import Nav from "./Nav";
 import img from "./../images/poland.jpg";
 import Button from "./stylecomponents/Button";
@@ -15,22 +15,26 @@ import ContainerDropdownlist from "./stylecomponents/ContainerDropdownlist";
 import Footer from "./stylecomponents/Footer";
 
 function StatChoice(props) {
-  const units = useSelector(state => state.units);
   const dispatch = useDispatch();
+  const units = useSelector(state => state.units);
+  const districts = useSelector(state => state.entity.district || []);
+  const countys = useSelector(state => state.entity.county || []);
+  const voivodeships = useSelector(state => state.entity.voivodeship || []);
   const [buttonDisable, setButtonDisable] = useState(true);
-  const [districts, setDistricts] = useState([]);
-  const [countys, setCountys] = useState([]);
-  const [voivodeships, setVoivodeships] = useState([]);
   const [selectedTeryt, setSelectedTeryt] = useState("teryt");
-
-  const setEntity = (e, enitity) => {
+  const clearEntity = () => {
+    dispatch({
+      type: "CLEAR-UNITS"
+    });
+  };
+  const setEntity = (e, entity) => {
     const index = e.target.selectedIndex;
     const teryt = e.target.value;
     const text = e.nativeEvent.target[index].text;
     if (teryt !== "woj") setButtonDisable(false);
     else setButtonDisable(true);
     setSelectedTeryt(teryt);
-    switch (enitity) {
+    switch (entity) {
       case 0:
         dispatch({
           type: "SET-UNITS",
@@ -65,14 +69,6 @@ function StatChoice(props) {
         break;
     }
   };
-
-  useEffect(() => {
-    axios.get("district.json").then(response => setDistricts(response.data));
-    axios.get("county.json").then(response => setCountys(response.data));
-    axios
-      .get("voivodeship.json")
-      .then(response => setVoivodeships(response.data));
-  }, []);
 
   const displeydCounties = countys.filter(op => {
     return (
@@ -145,7 +141,9 @@ function StatChoice(props) {
           </Dropdownlist>{" "}
           <Link to={`/display/${selectedTeryt}`}>
             {" "}
-            <Button disabled={buttonDisable}>Szukaj</Button>
+            <Button onClick={() => clearEntity()} disabled={buttonDisable}>
+              Szukaj
+            </Button>
           </Link>
         </ContainerDropdownlist>
       </Section>

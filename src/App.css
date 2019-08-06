@@ -21,3 +21,16 @@
     font-size: 8rem;
   }
 }
+
+.exclamation {
+  display: block;
+  color: #b52a2a;
+  padding-bottom: 20px;
+  font-size: 16rem;
+}
+
+@media (max-width: 730px) {
+  .exclamation {
+    font-size: 12rem;
+  }
+}

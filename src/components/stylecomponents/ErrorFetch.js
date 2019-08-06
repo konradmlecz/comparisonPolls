@@ -1,17 +1,14 @@
 import styled from "styled-components";
-
-const Paragraf = styled.p`
-  display: ${props => props.display};
-  margin-top: ${props => props.mb};
-  text-indent: 30px;
-  color: ${props => props.color};
+const ErrorFetch = styled.p`
   padding: 0 20px;
   font-size: 1.6rem;
   line-height: 200%;
+  color: black;
   font-family: var(--font-default);
   text-align: ${props => props.align || "center"};
   @media (max-width: 430px) {
     font-size: 1.4rem;
   }
 `;
-export default Paragraf;
+
+export default ErrorFetch;

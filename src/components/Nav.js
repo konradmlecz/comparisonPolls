@@ -36,7 +36,7 @@ export default withRouter(function Nav(props) {
               Porównywarka {/* */}
             </NavItem>
           </NavLink>
-          <NavLink to="/contact" style={{ textDecoration: "none" }}>
+          <NavLink to="/info" style={{ textDecoration: "none" }}>
             <NavItem
               color={
                 props.location.pathname === "/" ? null : "var(--color-white)"

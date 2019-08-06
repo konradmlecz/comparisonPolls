@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
+import { Chart } from "react-google-charts";
 import Nav from "./Nav";
 import Paragraf from "./stylecomponents/Paragraf";
 import Section from "./stylecomponents/Section";
-import { Chart } from "react-google-charts";
 import Loader from "./stylecomponents/Loader";
+import ErrorFetch from "./stylecomponents/ErrorFetch";
+import ContainerError from "./stylecomponents/ContainerError";
+import ContainerChart from "./stylecomponents/ContainerChart";
+import Footer from "./stylecomponents/Footer";
+import { faExclamation } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const startData = [
+const draftChart = [
   [
     "Element",
     "Procent",
@@ -19,78 +25,109 @@ const startData = [
   ]
 ];
 
+const colors = [
+  "blue",
+  "DarkRed",
+  "ForestGreen",
+  "red",
+  "Gold",
+  "gray",
+  "white",
+  "orange",
+  "yellow",
+  "silver"
+];
+
 function StatDisplay(props) {
-  const [poll, setPoll] = useState();
-  const [data, setData] = useState([]);
+  const [pollsData, setPollsData] = useState();
+  const [chartsToDisplay, setChartsToDisplay] = useState([]);
+  const [error, setError] = useState(false);
+  const [errorContent, setErrorContent] = useState(null);
 
-  const display = () => {
-    const mainData = [];
-    poll.forEach((item, i) => {
-      const newData = [...startData];
+  const display = myJson => {
+    const charts = [];
+    myJson.forEach((item, i) => {
+      const chart = [...draftChart];
       const arrData = Object.entries(item).splice(6);
-
-      arrData.forEach(item => {
+      arrData.forEach((item, i) => {
         if ("__v" !== item[0]) {
           item[1] = Number(item[1]);
-          item.push("silver");
           item.push(null);
-          newData.push(item);
+          item.push(null);
+          chart.push(item);
         }
       });
-      newData.sort(function(a, b) {
+      chart.sort(function(a, b) {
         return b[1] - a[1];
       });
-      mainData.push(newData);
+      chart.forEach((item, i) => {
+        if (i) {
+          item[2] = colors[i - 1];
+        }
+      });
+      charts.push(chart);
     });
-    setData(mainData);
+    setChartsToDisplay(charts);
   };
 
-  const { teryt } = props.match.params;
+  const teryt = props.match.params.teryt;
+
   useEffect(() => {
     fetch(`http://localhost:5000/${teryt}`)
       .then(response => {
         if (response.ok) return response;
       })
       .then(response => response.json())
-      .then(myJson => setPoll(myJson))
-      .catch(error => alert(error));
+      .then(myJson => {
+        if (myJson.length < 1) {
+          setError(true);
+          setErrorContent(
+            "Zły Teryt. Nie ma takiej jednoski samorządowej. Wybierz z listy poprawną."
+          );
+        } else {
+          setPollsData(myJson);
+          display(myJson);
+        }
+      })
+      .catch(error => {
+        setError(true);
+        setErrorContent("Dane chwilo niedostępne. Spróbuj ponownie później");
+      });
   }, [teryt]);
 
-  // useEffect(() => {
-  //   display();
-  // }, [poll]);
   const nameDistrict = () => {
-    if (poll) {
-      switch (poll[0].Teryt.length) {
-        case 2:
-          return `Województwo ${poll[0].JST}`;
-        case 4:
-          return `Powiat ${poll[0].JST}`;
-        case 6:
-          return `${poll[0].JST}`;
-        default:
-          return;
+    if (pollsData) {
+      if (pollsData[0]) {
+        switch (pollsData[0].Teryt.length) {
+          case 2:
+            return `Województwo ${pollsData[0].JST}`;
+          case 4:
+            return `Powiat ${pollsData[0].JST}`;
+          case 6:
+            return `${pollsData[0].JST}`;
+          default:
+            return;
+        }
       }
     }
   };
   return (
     <>
       <Nav />
-      <button onClick={() => display()}>pokaz dane</button>
-      <Paragraf>{nameDistrict()}</Paragraf>
-      {data.length > 0 ? (
-        poll.map((item, i) => (
-          <Section key={i} paddingtop={"10px"}>
+      <Paragraf mb="10px">{nameDistrict()}</Paragraf>
+      {chartsToDisplay.length > 0 ? (
+        pollsData.map((item, i) => (
+          <ContainerChart key={i}>
             <Chart
               width={"100%"}
               height={"300px"}
               chartType="BarChart"
-              data={data[i]}
+              data={chartsToDisplay[i]}
               options={{
                 title: `${item.Poll}`,
                 backgroundColor: "#f2f2f2",
                 // orientation: "horizontal",
-                width: "90%",
+                width: "80%",
                 chartArea: {
                   left: "25%",
                   width: "50%"
@@ -99,11 +136,21 @@ function StatDisplay(props) {
                 legend: { position: "none" }
               }}
             />
-          </Section>
+          </ContainerChart>
         ))
+      ) : error ? (
+        <ContainerError mh={"90vh"}>
+          <FontAwesomeIcon icon={faExclamation} className="exclamation" />
+          <ErrorFetch>{errorContent}</ErrorFetch>
+        </ContainerError>
       ) : (
-        <Loader />
+        <Section mh="90vh">
+          <Loader />
+        </Section>
       )}
+      <Footer bgc={"var(--color-complementary)"}>
+        <Paragraf>K.M. Kraków 2019 - All rights reserved</Paragraf>
+      </Footer>
     </>
   );
 }
