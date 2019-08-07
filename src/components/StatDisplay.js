@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Chart } from "react-google-charts";
 import Nav from "./Nav";
 import Paragraf from "./stylecomponents/Paragraf";
-import Section from "./stylecomponents/Section";
 import Loader from "./stylecomponents/Loader";
 import ErrorFetch from "./stylecomponents/ErrorFetch";
-import ContainerError from "./stylecomponents/ContainerError";
+import SectionDirectColumn from "./stylecomponents/SectionDirectColumn";
 import ContainerChart from "./stylecomponents/ContainerChart";
 import Footer from "./stylecomponents/Footer";
 import { faExclamation } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import WraperMain2 from "./stylecomponents/WraperMain2";
 
 const draftChart = [
   [
@@ -113,44 +113,45 @@ function StatDisplay(props) {
   };
   return (
     <>
-      <Nav />
-      <Paragraf mb="10px">{nameDistrict()}</Paragraf>
-      {chartsToDisplay.length > 0 ? (
-        pollsData.map((item, i) => (
-          <ContainerChart key={i}>
-            <Chart
-              width={"100%"}
-              height={"300px"}
-              chartType="BarChart"
-              data={chartsToDisplay[i]}
-              options={{
-                title: `${item.Poll}`,
-                backgroundColor: "#f2f2f2",
-                // orientation: "horizontal",
-                width: "80%",
-                chartArea: {
-                  left: "25%",
-                  width: "50%"
-                },
-                bar: { groupWidth: "95%" },
-                legend: { position: "none" }
-              }}
-            />
-          </ContainerChart>
-        ))
-      ) : error ? (
-        <ContainerError mh={"90vh"}>
-          <FontAwesomeIcon icon={faExclamation} className="exclamation" />
-          <ErrorFetch>{errorContent}</ErrorFetch>
-        </ContainerError>
-      ) : (
-        <Section mh="90vh">
-          <Loader />
-        </Section>
-      )}
-      <Footer bgc={"var(--color-complementary)"}>
-        <Paragraf>K.M. Kraków 2019 - All rights reserved</Paragraf>
-      </Footer>
+      <WraperMain2>
+        <Nav />
+        <Paragraf mb="10px">{nameDistrict()}</Paragraf>
+        {chartsToDisplay.length > 0 ? (
+          pollsData.map((item, i) => (
+            <ContainerChart key={i}>
+              <Chart
+                width={"95%"}
+                height={"300px"}
+                chartType="BarChart"
+                data={chartsToDisplay[i]}
+                options={{
+                  title: `${item.Poll}`,
+                  backgroundColor: "#f2f2f2",
+                  width: "80%",
+                  chartArea: {
+                    left: "35%",
+                    width: "50%"
+                  },
+                  bar: { groupWidth: "95%" },
+                  legend: { position: "none" }
+                }}
+              />
+            </ContainerChart>
+          ))
+        ) : error ? (
+          <SectionDirectColumn>
+            <FontAwesomeIcon icon={faExclamation} className="exclamation" />
+            <ErrorFetch>{errorContent}</ErrorFetch>
+          </SectionDirectColumn>
+        ) : (
+          <SectionDirectColumn>
+            <Loader />
+          </SectionDirectColumn>
+        )}
+        <Footer bgc={"var(--color-complementary)"}>
+          <Paragraf>K.M. Kraków 2019 - All rights reserved</Paragraf>
+        </Footer>
+      </WraperMain2>
     </>
   );
 }

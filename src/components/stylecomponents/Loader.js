@@ -10,12 +10,12 @@ const load = keyframes`
 `;
 
 const Loader = styled.div`
-  font-size: 8px;
+  font-size: 0.8rem;
   text-indent: -9999em;
   border-top: 1.1em solid var(--color-complementary);
   border-right: 1.1em solid var(--color-complementary);
   border-bottom: 1.1em solid var(--color-complementary);
-  border-left: 1.1em solid #f2f2f2;
+  border-left: 1.1em solid var(--color-light);
   -webkit-animation: ${load} 1.1s infinite linear;
   animation: ${load} 1.5s infinite linear;
   border-radius: 50%;

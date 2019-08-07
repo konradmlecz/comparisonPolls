@@ -2,7 +2,7 @@ import styled from "styled-components";
 const NavItem = styled.p`
   font-family: var(--font-default);
   background-color: ${props => props.backgroudcolor || "none"};
-  color: ${props => props.color || "black"};
+  color: var(--color-white);
   display: block;
   margin: 10px 20px;
   padding: 0 5px;

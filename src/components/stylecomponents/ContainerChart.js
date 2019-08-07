@@ -1,7 +1,7 @@
 import styled from "styled-components";
 const ContainerChart = styled.div`
-  background-color: ${props => props.bgc};
   display: flex;
+  margin: 0 auto;
   padding-top: 5px;
   padding-bottom: 5px;
   justify-content: center;
