@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/comparisonPolls/static/css/main.43655fba.chunk.css",
+    "main.js": "/comparisonPolls/static/js/main.6e92410c.chunk.js",
+    "main.js.map": "/comparisonPolls/static/js/main.6e92410c.chunk.js.map",
+    "runtime~main.js": "/comparisonPolls/static/js/runtime~main.1de1f099.js",
+    "runtime~main.js.map": "/comparisonPolls/static/js/runtime~main.1de1f099.js.map",
+    "static/js/2.b7a0368d.chunk.js": "/comparisonPolls/static/js/2.b7a0368d.chunk.js",
+    "static/js/2.b7a0368d.chunk.js.map": "/comparisonPolls/static/js/2.b7a0368d.chunk.js.map",
+    "index.html": "/comparisonPolls/index.html",
+    "precache-manifest.4fcd23645e9e7d17fc93f53a3b492221.js": "/comparisonPolls/precache-manifest.4fcd23645e9e7d17fc93f53a3b492221.js",
+    "service-worker.js": "/comparisonPolls/service-worker.js",
+    "static/css/main.43655fba.chunk.css.map": "/comparisonPolls/static/css/main.43655fba.chunk.css.map",
+    "static/media/ballot-box-32384.svg": "/comparisonPolls/static/media/ballot-box-32384.2d333176.svg",
+    "static/media/poland-polish-5611.jpg": "/comparisonPolls/static/media/poland-polish-5611.9d4d9079.jpg",
+    "static/media/poland.jpg": "/comparisonPolls/static/media/poland.315e4f2f.jpg"
+  }
+}
