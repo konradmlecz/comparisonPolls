@@ -24,12 +24,12 @@ export default function StatStart(props) {
     <>
       <BackgroundImage />
       <Nav />
-      <ContainerHeader bgc={"var(--color-complementary)"}>
-        <ContainerRestrictive>
-          <Header>Porównywarka wyborów</Header>
-        </ContainerRestrictive>
-      </ContainerHeader>
       <ContainerSectionAbsolute>
+        <ContainerHeader bgc={"var(--color-complementary)"}>
+          <ContainerRestrictive>
+            <Header>Porównywarka wyborów</Header>
+          </ContainerRestrictive>
+        </ContainerHeader>
         <Section bgc={"var(--color-light)"}>
           <ContainerRestrictive>
             <ContainerDevideToHalf>
