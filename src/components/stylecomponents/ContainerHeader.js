@@ -6,6 +6,9 @@ const ContainerHeader = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 `;
 
 export default ContainerHeader;
