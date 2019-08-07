@@ -73,7 +73,7 @@ function StatDisplay(props) {
   const teryt = props.match.params.teryt;
 
   useEffect(() => {
-    fetch(`http://localhost:5000/${teryt}`)
+    fetch(`https://pollpoland.herokuapp.com/${teryt}`)
       .then(response => {
         if (response.ok) return response;
       })

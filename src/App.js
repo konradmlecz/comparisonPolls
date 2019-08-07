@@ -11,7 +11,7 @@ import { useDispatch } from "react-redux";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    fetch("./../entity.json")
+    fetch("./entity.json")
       .then(response => response.json())
       .then(response => {
         dispatch({
@@ -22,8 +22,8 @@ function App() {
             district: response.districts
           }
         });
-      });
-
+      })
+      .catch(error => console.error("Error:", error));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
